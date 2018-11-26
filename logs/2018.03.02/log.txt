@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'spam' is not defined
+
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+ValueError: invalid literal for int() with base 10: 'k'
+
+Traceback (most recent call last):
+  File "C:/Users/nkitsan/Documents/studying/Proga_sem5/exeption_parser/main.py", line 4, in <module>
+    parser1.print_errors()
+  File "C:\Users\nkitsan\Documents\studying\Proga_sem5\exeption_parser\error_parser\parser.py", line 49, in print_errors
+    print(json.dumps(self.files_to_json(), indent=2))
+  File "C:\Users\nkitsan\Documents\studying\Proga_sem5\exeption_parser\error_parser\parser.py", line 70, in files_to_json
+    file_json = self._parse_file_errors(file)
+  File "C:\Users\nkitsan\Documents\studying\Proga_sem5\exeption_parser\error_parser\parser.py", line 92, in _parse_file_errors
+    line_of_code = re.search(self.log_regexp.ERROR_LINE, line).matches
+AttributeError: '_sre.SRE_Match' object has no attribute 'matches'
